@@ -14,3 +14,6 @@ end
 a = 100
 b = 200
 print a + b
+
+def cache(result, &block)
+end
