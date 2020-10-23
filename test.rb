@@ -27,3 +27,7 @@ def cache(result, &block)
   return $h[result] if $h[result]
   yield
 end
+
+def print_fibonacci(i)
+  print fibonacci(i)
+end
