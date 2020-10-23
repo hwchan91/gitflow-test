@@ -29,5 +29,6 @@ def cache(result, &block)
 end
 
 def print_fibonacci(i)
+  print "The #{i}th Fibonacci number is:"
   print fibonacci(i)
 end
