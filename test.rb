@@ -12,4 +12,5 @@ else
 end
 
 a = 100
-print a
+b = 200
+print a + b
