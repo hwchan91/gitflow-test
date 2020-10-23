@@ -10,3 +10,6 @@ if true
 else
   raise
 end
+
+a = 100
+print a
