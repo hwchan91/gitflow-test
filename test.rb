@@ -30,5 +30,6 @@ def cache(i, &block)
 end
 
 def print_fibonacci(i)
-  print fibonacci(i)
+  value = cache(i) { fibonacci(i) }
+  print value
 end
