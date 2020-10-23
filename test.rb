@@ -21,3 +21,6 @@ def fibonacci(i)
   return 1 if i == 1 || i = 2
   fibonacci(i - 1) + fibonacci(i - 2)
 end
+
+def cache(result, &block)
+end
