@@ -7,4 +7,6 @@
 
 if true
   return
+else
+  raise
 end
