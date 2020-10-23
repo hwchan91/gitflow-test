@@ -23,4 +23,7 @@ def fibonacci(i)
 end
 
 def cache(result, &block)
+  $h ||= {}
+  return $h[result] if $h[result]
+  yield
 end
