@@ -15,6 +15,13 @@ a = 100
 b = 200
 print a + b
 
+def fibonacci(i)
+  raise if i < 1
+  raise unless i.is_a? Integer
+  return 1 if i == 1 || i = 2
+  fibonacci(i - 1) + fibonacci(i - 2)
+end
+
 def cache(result, &block)
   $h ||= {}
   return $h[result] if $h[result]
