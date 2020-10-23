@@ -22,10 +22,11 @@ def fibonacci(i)
   fibonacci(i - 1) + fibonacci(i - 2)
 end
 
-def cache(result, &block)
+def cache(i, &block)
   $h ||= {}
-  return $h[result] if $h[result]
-  yield
+  return $h[i] if $h[i]
+  result = yield
+  $h[i] = result
 end
 
 def print_fibonacci(i)
