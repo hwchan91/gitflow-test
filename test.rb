@@ -30,6 +30,8 @@ def cache(i, &block)
 end
 
 def print_fibonacci(i)
+  value = cache(i) { fibonacci(i) }
+
   print "The #{i}th Fibonacci number is:"
-  print fibonacci(i)
+  print value
 end
